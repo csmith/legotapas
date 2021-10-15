@@ -1,0 +1,12 @@
+//go:build !lego_{{join . " && !lego_"}}
+
+package legotapas
+
+import (
+    "github.com/go-acme/lego/v4/challenge"
+    "github.com/go-acme/lego/v4/providers/dns"
+)
+
+func CreateProvider(providerName string) (challenge.Provider, error) {
+    return dns.NewDNSChallengeProviderByName(providerName)
+}
