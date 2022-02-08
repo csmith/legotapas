@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"path"
+	"sort"
 	"strings"
 	"text/template"
 
@@ -66,5 +67,7 @@ func providers() []string {
 			res = append(res, path.Base(imp))
 		}
 	}
+
+	sort.Strings(res)
 	return res
 }
