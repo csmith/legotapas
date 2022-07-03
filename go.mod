@@ -1,6 +1,6 @@
 module github.com/csmith/legotapas
 
-go 1.17
+go 1.18
 
 require (
 	github.com/go-acme/lego/v4 v4.8.0
