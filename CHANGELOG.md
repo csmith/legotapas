@@ -1,3 +1,8 @@
+# v1.3.0
+
+- Updated to lego v4.8.0
+- Updated to Go 1.18
+
 # v1.2.0
 
 - Updated to lego v4.7.0
