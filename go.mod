@@ -3,7 +3,7 @@ module github.com/csmith/legotapas
 go 1.18
 
 require (
-	github.com/go-acme/lego/v4 v4.10.0
+	github.com/go-acme/lego/v4 v4.10.2
 	golang.org/x/tools v0.8.0
 )
 
