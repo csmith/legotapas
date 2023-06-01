@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-acme/lego/v4 v4.12.0
-	golang.org/x/tools v0.9.1
+	golang.org/x/tools v0.9.3
 )
 
 require (
