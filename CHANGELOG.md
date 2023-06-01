@@ -1,3 +1,7 @@
+# v1.6.0
+
+- Updated to lego v4.12.0
+
 # v1.5.0
 
 - Updated to lego v4.10.0
