@@ -3,7 +3,7 @@ module github.com/csmith/legotapas
 go 1.18
 
 require (
-	github.com/go-acme/lego/v4 v4.13.3
+	github.com/go-acme/lego/v4 v4.14.2
 	golang.org/x/tools v0.14.0
 )
 
@@ -31,7 +31,20 @@ require (
 	github.com/akamai/AkamaiOPEN-edgegrid-golang v1.2.2 // indirect
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.1755 // indirect
 	github.com/andres-erbsen/clock v0.0.0-20160526145045-9e14626cd129 // indirect
-	github.com/aws/aws-sdk-go v1.39.0 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.19.0 // indirect
+	github.com/aws/aws-sdk-go-v2/config v1.18.28 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.13.27 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.13.5 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.35 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.29 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.36 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.29 // indirect
+	github.com/aws/aws-sdk-go-v2/service/lightsail v1.27.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/route53 v1.28.4 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.12.13 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.13 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.19.3 // indirect
+	github.com/aws/smithy-go v1.13.5 // indirect
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
 	github.com/civo/civogo v0.3.11 // indirect
@@ -83,6 +96,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/namedotcom/go v0.0.0-20180403034216-08470befbe04 // indirect
 	github.com/nrdcg/auroradns v1.1.0 // indirect
+	github.com/nrdcg/bunny-go v0.0.0-20230728143221-c9dda82568d9 // indirect
 	github.com/nrdcg/desec v0.7.0 // indirect
 	github.com/nrdcg/dnspod-go v0.4.0 // indirect
 	github.com/nrdcg/freemyip v0.2.0 // indirect
@@ -92,7 +106,7 @@ require (
 	github.com/nrdcg/porkbun v0.2.0 // indirect
 	github.com/nzdjb/go-metaname v1.0.0 // indirect
 	github.com/oracle/oci-go-sdk v24.3.0+incompatible // indirect
-	github.com/ovh/go-ovh v1.4.1 // indirect
+	github.com/ovh/go-ovh v1.4.2 // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -103,7 +117,6 @@ require (
 	github.com/sacloud/iaas-api-go v1.11.1 // indirect
 	github.com/sacloud/packages-go v0.0.9 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.17 // indirect
-	github.com/simplesurance/bunny-go v0.0.0-20221115111006-e11d9dc91f04 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/smartystreets/go-aws-auth v0.0.0-20180515143844-0c1422d1fdb9 // indirect
 	github.com/softlayer/softlayer-go v1.1.2 // indirect
