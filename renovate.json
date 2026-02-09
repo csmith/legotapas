@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>meta/renovate"
+  ],
+  "postUpgradeTasks": {
+    "commands": [
+      "rm plate_*.go",
+      "go run ./cmd/generate"
+    ],
+    "executionMode": "branch",
+    "fileFilters": ["*.go"]
+  }
+}
