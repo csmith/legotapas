@@ -5,7 +5,7 @@
   ],
   "postUpgradeTasks": {
     "commands": [
-      "rm plate_*.go",
+      "sh -c 'rm plate_*.go'",
       "go run ./cmd/generate"
     ],
     "executionMode": "branch",
