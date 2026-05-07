@@ -2,7 +2,7 @@ module github.com/csmith/legotapas
 
 go 1.25.0
 
-toolchain go1.26.2
+toolchain go1.26.3
 
 require (
 	github.com/go-acme/lego/v4 v4.33.0
