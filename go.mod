@@ -1,4 +1,4 @@
-module github.com/csmith/legotapas
+module github.com/csmith/legotapas/v2
 
 go 1.25.0
 

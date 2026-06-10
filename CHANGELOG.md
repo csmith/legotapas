@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0 - 2026-06-10
+
+- Updated to lego v5
+- Minimum Go version is now 1.25
+
 ## 1.8.0 - 2025-11-15
 
 - Updated to lego v4.28.1
