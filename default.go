@@ -3,10 +3,10 @@
 package legotapas
 
 import (
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    return dns.NewDNSChallengeProviderByName(providerName)
+	return dns.NewDNSChallengeProviderByName(providerName)
 }
