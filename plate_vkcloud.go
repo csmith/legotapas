@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/vkcloud"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/vkcloud"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "vkcloud" {
-        return nil, fmt.Errorf("this build of legotapas only supports `vkcloud` as a provider")
-    }
+	if strings.ToLower(providerName) != "vkcloud" {
+		return nil, fmt.Errorf("this build of legotapas only supports `vkcloud` as a provider")
+	}
 
-    return vkcloud.NewDNSProvider()
+	return vkcloud.NewDNSProvider()
 }

@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/regfish"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/regfish"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "regfish" {
-        return nil, fmt.Errorf("this build of legotapas only supports `regfish` as a provider")
-    }
+	if strings.ToLower(providerName) != "regfish" {
+		return nil, fmt.Errorf("this build of legotapas only supports `regfish` as a provider")
+	}
 
-    return regfish.NewDNSProvider()
+	return regfish.NewDNSProvider()
 }

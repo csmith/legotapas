@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/hosttech"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/hosttech"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "hosttech" {
-        return nil, fmt.Errorf("this build of legotapas only supports `hosttech` as a provider")
-    }
+	if strings.ToLower(providerName) != "hosttech" {
+		return nil, fmt.Errorf("this build of legotapas only supports `hosttech` as a provider")
+	}
 
-    return hosttech.NewDNSProvider()
+	return hosttech.NewDNSProvider()
 }

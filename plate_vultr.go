@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/vultr"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/vultr"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "vultr" {
-        return nil, fmt.Errorf("this build of legotapas only supports `vultr` as a provider")
-    }
+	if strings.ToLower(providerName) != "vultr" {
+		return nil, fmt.Errorf("this build of legotapas only supports `vultr` as a provider")
+	}
 
-    return vultr.NewDNSProvider()
+	return vultr.NewDNSProvider()
 }

@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/keyhelp"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/keyhelp"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "keyhelp" {
-        return nil, fmt.Errorf("this build of legotapas only supports `keyhelp` as a provider")
-    }
+	if strings.ToLower(providerName) != "keyhelp" {
+		return nil, fmt.Errorf("this build of legotapas only supports `keyhelp` as a provider")
+	}
 
-    return keyhelp.NewDNSProvider()
+	return keyhelp.NewDNSProvider()
 }

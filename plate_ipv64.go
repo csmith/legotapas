@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/ipv64"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/ipv64"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "ipv64" {
-        return nil, fmt.Errorf("this build of legotapas only supports `ipv64` as a provider")
-    }
+	if strings.ToLower(providerName) != "ipv64" {
+		return nil, fmt.Errorf("this build of legotapas only supports `ipv64` as a provider")
+	}
 
-    return ipv64.NewDNSProvider()
+	return ipv64.NewDNSProvider()
 }

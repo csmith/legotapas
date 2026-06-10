@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/mittwald"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/mittwald"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "mittwald" {
-        return nil, fmt.Errorf("this build of legotapas only supports `mittwald` as a provider")
-    }
+	if strings.ToLower(providerName) != "mittwald" {
+		return nil, fmt.Errorf("this build of legotapas only supports `mittwald` as a provider")
+	}
 
-    return mittwald.NewDNSProvider()
+	return mittwald.NewDNSProvider()
 }

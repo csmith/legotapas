@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/liquidweb"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/liquidweb"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "liquidweb" {
-        return nil, fmt.Errorf("this build of legotapas only supports `liquidweb` as a provider")
-    }
+	if strings.ToLower(providerName) != "liquidweb" {
+		return nil, fmt.Errorf("this build of legotapas only supports `liquidweb` as a provider")
+	}
 
-    return liquidweb.NewDNSProvider()
+	return liquidweb.NewDNSProvider()
 }

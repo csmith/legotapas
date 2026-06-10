@@ -3,17 +3,17 @@
 package legotapas
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 
-    "github.com/go-acme/lego/v4/challenge"
-    "github.com/go-acme/lego/v4/providers/dns/netcup"
+	"github.com/go-acme/lego/v5/challenge"
+	"github.com/go-acme/lego/v5/providers/dns/netcup"
 )
 
 func CreateProvider(providerName string) (challenge.Provider, error) {
-    if strings.ToLower(providerName) != "netcup" {
-        return nil, fmt.Errorf("this build of legotapas only supports `netcup` as a provider")
-    }
+	if strings.ToLower(providerName) != "netcup" {
+		return nil, fmt.Errorf("this build of legotapas only supports `netcup` as a provider")
+	}
 
-    return netcup.NewDNSProvider()
+	return netcup.NewDNSProvider()
 }
