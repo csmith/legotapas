@@ -10,11 +10,11 @@ import (
 	"strings"
 	"text/template"
 
-	_ "github.com/go-acme/lego/v4/providers/dns"
+	_ "github.com/go-acme/lego/v5/providers/dns"
 	"golang.org/x/tools/go/packages"
 )
 
-const dnsPackage = "github.com/go-acme/lego/v4/providers/dns"
+const dnsPackage = "github.com/go-acme/lego/v5/providers/dns"
 
 //go:embed *.go.gotpl
 var templates embed.FS
