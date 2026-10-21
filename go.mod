@@ -5,7 +5,7 @@ go 1.26.0
 toolchain go1.27.3
 
 require (
-	github.com/go-acme/lego/v5 v5.5.1
+	github.com/go-acme/lego/v5 v5.5.2
 	golang.org/x/tools v0.50.0
 )
 
