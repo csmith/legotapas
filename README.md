@@ -1,5 +1,9 @@
 # Lego Tapas
 
+> [!IMPORTANT]
+> This project is deprecated: [Lego v5.6.0 natively supports build tags](https://github.com/go-acme/lego/pull/3305),
+> so legotapas is no longer required.
+
 Provides build constraints for the DNS providers found in [lego](https://github.com/go-acme/lego).
 
 ## How to use
